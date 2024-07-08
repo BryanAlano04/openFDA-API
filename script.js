@@ -41,8 +41,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Fetch default events on page load
     fetchDrugEvents();
-<<<<<<< HEAD
+
 });
-=======
-  });
->>>>>>> 672fe1e428a0218737fa8130a59e670ec105f786
