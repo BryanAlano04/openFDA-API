@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>openFDA Project</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDA Drug Events</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Recent Drug Events</h1>
-  <div id="data-container"></div>
-  <script src="script.js"></script>
+    <h1>FDA Drug Events</h1>
+    <div id="input-container">
+        <label for="numEvents">Number of Events:</label>
+        <input type="number" id="numEvents" min="1" value="10">
+        <button id="fetchButton">Fetch Events</button>
+    </div>
+    <div id="data-container"></div>
+    <script src="script.js"></script>
 </body>
 </html>
