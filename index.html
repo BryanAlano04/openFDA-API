@@ -4,16 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FDA Drug Events</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>FDA Drug Events</h1>
-    <div id="input-container">
-        <label for="numEvents">Number of Events:</label>
-        <input type="number" id="numEvents" min="1" value="10">
-        <button id="fetchButton">Fetch Events</button>
+<body class="background-image">
+    <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+        <div class="container">
+            <h1 class="text-center">FDA Drug Events</h1>
+            <div id="input-container" class="text-center mt-4">
+                <label for="numEvents">Number of Events:</label>
+                <input type="number" id="numEvents" min="1" value="10">
+                <button id="fetchButton" class="btn btn-primary">Fetch Events</button>
+            </div>
+            <div id="data-container" class="mt-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <table class="table table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Received Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="events-table">
+                                <!-- Table rows will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="data-container"></div>
+
+    <!-- Vanta.js and Custom Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
     <script src="script.js"></script>
+
+    <!-- Initialize Vanta.js Birds -->
+    <script>
+        VANTA.BIRDS({
+            el: "body", // Select the element where you want to apply the effect, here 'body' for the entire page
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        });
+    </script>
 </body>
 </html>
