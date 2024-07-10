@@ -16,14 +16,14 @@ This project retrieves data from the openFDA API and displays recent drug event 
 	A fetch button (fetchButton) to initiate the data retrieval.
 	A data-container div where fetched event data will be displayed.
 2. Style.css- This file contains CSS styles to define the appearance of your webpage.
-Styles include:
+# Styles include:
 	Body formatting (font, background color, margins).
 	Styling for headers (h1).
 	Formatting for input-container, numEvents input field, fetchButton, and data-container.
 	Styling for .event-item which formats each individual event displayed.
 
 3. Script.js - This file contains JavaScript code that handles the dynamic fetching and display of data.
-It:
+# It:
 	Listens for the DOMContentLoaded event to ensure the DOM is fully loaded before executing.
 	Defines fetchDrugEvents() function:
 	Fetches data from the openFDA API based on the number entered (numEvents).
