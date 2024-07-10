@@ -9,7 +9,7 @@ This project retrieves data from the openFDA API and displays recent drug event 
 
 ## Files
 1. index.html - This file is the main HTML document that structures the webpage.
-It contains:
+# It contains:
 	An h1 heading for the title.
 	An input-container div with:
 	A label and an input field (numEvents) for specifying the number of events to fetch.
