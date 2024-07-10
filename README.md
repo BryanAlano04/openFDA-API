@@ -1,5 +1,4 @@
 # openFDA-API
-## Activity-API
 ***"Build a website that integrates a chosen public API."***
 ## Leader: Alano Bryan
 ### Members:
